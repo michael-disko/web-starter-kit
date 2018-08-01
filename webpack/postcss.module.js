@@ -14,7 +14,7 @@ module.exports = () => {
                 options: {
                   importLoaders: 1,
                   sourceMap: process.env.NODE_ENV !== 'production',
-	              url: false
+	                url: false
                 },
               },
               {

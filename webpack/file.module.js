@@ -3,7 +3,8 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.(png|jpe?g)$/i,
+          test: /\.(png|jpe?g|svg)$/i,
+          exclude: /(node_modules)/,
           use: [
             {
               loader: 'file-loader',

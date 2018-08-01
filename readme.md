@@ -44,7 +44,7 @@ npm run start
 
 ### libpng issues
 
-Installing on some versions of OSX may raise errors with a [missing libpng dependency](https://github.com/tcoopman/image-webpack-loader/issues/51#issuecomment-273597313): 
+Installing on some versions of OSX and Linux may raise errors with a [missing libpng dependency](https://github.com/tcoopman/image-webpack-loader/issues/51#issuecomment-273597313): 
 
 > Module build failed: Error: dyld: Library not loaded: /usr/local/opt/libpng/lib/libpng16.16.dylib
 
@@ -56,6 +56,16 @@ This can be remedied by installing the newest version of libpng with [homebrew](
 ```sh
 brew install libpng
 ```
+
+or for Debian based systems 
+
+```sh
+wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb \
+  && sudo dpkg -i /tmp/libpng12.deb \
+  && rm /tmp/libpng12.deb
+
+```
+
 <h2 align="center">Commands</h2>
 
 Scaffold  | Usage

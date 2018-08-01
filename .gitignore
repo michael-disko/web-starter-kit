@@ -1,5 +1,121 @@
-node_modules/
+### Builder ###
 build/
+
+### NPM ###
+.ntvs_analysis.dat
+node_modules/
 package-lock.json
+
+### OSX ###
 **/.DS_Store
 .DS_Store
+
+### Eclipse ###
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+*.launch
+.buildpath
+.target
+.project
+
+### Intellij ###
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+## File-based project format:
+*.iws
+*.iml
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+# JIRA plugin
+atlassian-ide-plugin.xml
+# Cursive Clojure plugin
+.idea/replstate.xml
+# Ruby plugin and RubyMine
+/.rakeTasks
+# https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
+.idea/
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+# workspace files are user-specific
+*.sublime-workspace
+# sftp configuration file
+sftp-config.json
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### Vim ###
+.sw[a-p]
+.*.sw[a-p]
+Session.vim
+.netrwhist
+*~
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+### VisualStudio ###
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+*.VisualState.xml
+project.lock.json
+project.fragment.lock.json
+**/Properties/launchSettings.json
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# Web workbench (sass)
+.sass-cache/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets

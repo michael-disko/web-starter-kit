@@ -4,6 +4,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.(png|jpe?g)$/i,
+          exclude: /(node_modules)/,
           use: [
             {
               loader: 'image-webpack-loader',

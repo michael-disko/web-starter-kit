@@ -1,9 +1,14 @@
+const path = require('path');
+
 module.exports = () => {
   const config = {
     module: {
       rules: [
         {
           test: /\.svg$/,
+          include: [
+            path.resolve(__dirname, '../src/assets/sprite'),
+          ],
           use: [
             {
               loader: 'svg-sprite-loader',

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "watch": "webpack --watch --config webpack.dev.js",
     "g": "node cli.js"
   },
   "author": "Mike Disko",
@@ -69,6 +70,8 @@
     "svgo-loader": "^2.1.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-compile-time-plugin": "^1.0.0",
     "webpack-dev-server": "^2.10.1",
     "webpack-merge": "^4.1.1"
   }
