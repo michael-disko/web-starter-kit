@@ -6,6 +6,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.scss$/,
+          exclude: /(node_modules)/,
           use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
             fallback: 'style-loader',
             use: [
@@ -14,7 +15,7 @@ module.exports = () => {
                 options: {
                   importLoaders: 1,
                   sourceMap: process.env.NODE_ENV !== 'production',
-	                url: false
+                  url: false
                 },
               },
               {

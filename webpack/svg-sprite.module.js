@@ -6,6 +6,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.svg$/,
+          exclude: /(node_modules)/,
           include: [
             path.resolve(__dirname, '../src/assets/sprite'),
           ],

@@ -4,6 +4,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.pug$/,
+          exclude: /(node_modules)/,
           use: {
             loader: 'pug-loader',
             options: {
